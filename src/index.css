@@ -2,41 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* UniDoc AI Design System - University Document Processing Platform */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background & Text */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 27%;
 
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 27%;
 
+    /* Popover System */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Academic Blue Primary */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-variant: 214 70% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* University Secondary Colors */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 215 25% 27%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Subtle Muted Tones */
+    --muted: 210 15% 95%;
+    --muted-foreground: 215 15% 58%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Academic Accent */
+    --accent: 262 52% 47%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Error States */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border & Input */
+    --border: 214 20% 88%;
+    --input: 214 20% 93%;
+    --ring: 214 84% 56%;
 
-    --radius: 0.5rem;
+    /* AI Chat Colors */
+    --ai-primary: 262 52% 47%;
+    --ai-secondary: 262 25% 92%;
+    --ai-accent: 170 97% 15%;
+
+    /* Document Colors */
+    --doc-pdf: 0 84% 60%;
+    --doc-word: 214 84% 56%;
+    --doc-image: 142 52% 47%;
+
+    /* University Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(262 52% 47%));
+    --gradient-secondary: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 15% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 70% 45%));
+    --gradient-ai: linear-gradient(135deg, hsl(262 52% 47%), hsl(214 84% 56%));
+
+    /* Elegant Shadows */
+    --shadow-soft: 0 2px 15px -3px hsl(214 84% 56% / 0.07), 0 10px 20px -2px hsl(214 84% 56% / 0.04);
+    --shadow-medium: 0 10px 25px -5px hsl(214 84% 56% / 0.1), 0 10px 10px -5px hsl(214 84% 56% / 0.04);
+    --shadow-strong: 0 25px 50px -12px hsl(214 84% 56% / 0.25);
+    --shadow-glow: 0 0 40px hsl(214 84% 56% / 0.15);
+
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
